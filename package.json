@@ -1,0 +1,51 @@
+{
+  "name": "canvas-memory-guard",
+  "version": "0.1.0",
+  "description": "Pure preflight checks for browser canvas dimensions and memory budgets",
+  "keywords": [
+    "browser",
+    "canvas",
+    "memory",
+    "preflight",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Gauthier Huguenin",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "SECURITY.md"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run --coverage.enabled=false",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test && npm run build",
+    "prepack": "npm run check"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gauthier-Huguenin/canvas-memory-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gauthier-Huguenin/canvas-memory-guard/issues"
+  },
+  "homepage": "https://github.com/Gauthier-Huguenin/canvas-memory-guard#readme"
+}
