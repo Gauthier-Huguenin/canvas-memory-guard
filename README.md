@@ -26,7 +26,7 @@ work **before the first large canvas allocation**.
 The package is not published to npm yet. Install the tagged source from GitHub:
 
 ```sh
-npm install github:Gauthier-Huguenin/canvas-memory-guard#v0.1.0
+npm install github:Gauthier-Huguenin/canvas-memory-guard#v0.1.1
 ```
 
 Once an npm release is available, the command will be `npm install canvas-memory-guard`.

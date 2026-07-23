@@ -1,6 +1,6 @@
 {
   "name": "canvas-memory-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pure preflight checks for browser canvas dimensions and memory budgets",
   "keywords": [
     "browser",
@@ -34,6 +34,7 @@
     "test": "vitest run --coverage.enabled=false",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm test && npm run build",
+    "prepare": "npm run build",
     "prepack": "npm run check"
   },
   "devDependencies": {
@@ -47,5 +48,35 @@
   "bugs": {
     "url": "https://github.com/Gauthier-Huguenin/canvas-memory-guard/issues"
   },
-  "homepage": "https://github.com/Gauthier-Huguenin/canvas-memory-guard#readme"
+  "homepage": "https://github.com/Gauthier-Huguenin/canvas-memory-guard#readme",
+  "dependencies": {
+    "assertion-error": "^2.0.1",
+    "chai": "^6.2.2",
+    "convert-source-map": "^2.0.0",
+    "detect-libc": "^2.1.2",
+    "es-module-lexer": "^2.3.1",
+    "estree-walker": "^3.0.3",
+    "expect-type": "^1.4.0",
+    "fdir": "^6.5.0",
+    "lightningcss": "^1.33.0",
+    "lightningcss-linux-x64-gnu": "^1.33.0",
+    "magic-string": "^0.30.21",
+    "nanoid": "^3.3.16",
+    "obug": "^2.1.4",
+    "pathe": "^2.0.3",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.5",
+    "postcss": "^8.5.22",
+    "rolldown": "^1.1.5",
+    "siginfo": "^2.0.0",
+    "source-map-js": "^1.2.1",
+    "stackback": "^0.0.2",
+    "std-env": "^4.2.0",
+    "tinybench": "^2.9.0",
+    "tinyexec": "^1.2.4",
+    "tinyglobby": "^0.2.17",
+    "tinyrainbow": "^3.1.0",
+    "vite": "^8.1.5",
+    "why-is-node-running": "^2.3.0"
+  }
 }
